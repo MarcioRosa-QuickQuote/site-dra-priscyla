@@ -1,0 +1,12 @@
+node_modules/
+Python/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+pdf_images/
+screencapture-*.pdf
+analyze_*.py
+analysis_output.txt
+brand-spec.md
