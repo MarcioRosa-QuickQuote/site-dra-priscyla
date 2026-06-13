@@ -3,1081 +3,497 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dra. Priscyla Camara — Harmonização Orofacial & Estética</title>
+<title>Clínica Dra. Priscyla Câmara — Harmonização Orofacial & Estética</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #FDF6ED;
-  --surface: #FFFFFF;
-  --fg: #2D2D2D;
-  --muted: #7A7A7A;
-  --border: #E8DDD0;
-  --accent: #C8A45C;
-  --accent-light: #E8D5A8;
-  --accent-dark: #A8883E;
-  --dark-bg: #1A2E2E;
-  --dark-surface: #234040;
-  --text-light: #F5F0E8;
-  --sage: #8FA8A0;
-  --sage-light: #D0E5DE;
-  --whatsapp: #25D366;
-  --font-display: 'Playfair Display', 'Georgia', serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  --max-width: 1140px;
-  --nav-height: 72px;
-  --radius: 12px;
-  --radius-sm: 8px;
-}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'Montserrat',-apple-system,system-ui,sans-serif;background:#F3E9DF;color:#31302C;-webkit-font-smoothing:antialiased;line-height:1.6}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html { scroll-behavior: smooth; scroll-padding-top: var(--nav-height); }
-
-body {
-  font-family: var(--font-body);
-  color: var(--fg);
-  background: var(--bg);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
-img { max-width: 100%; height: auto; display: block; }
-a { color: inherit; text-decoration: none; }
-ul { list-style: none; }
-.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
-
-.section-label {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 12px;
-}
-
-.section-title {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 16px;
-  color: var(--fg);
-}
-
-.section-subtitle {
-  font-size: 1.05rem;
-  color: var(--muted);
-  max-width: 600px;
-  line-height: 1.7;
-}
-
-section { padding: 96px 0; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 14px 32px;
-  border-radius: 50px;
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  font-weight: 500;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-.btn-primary {
-  background: var(--accent);
-  color: white;
-}
-.btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(200,164,92,0.3); }
-
-.btn-whatsapp {
-  background: var(--whatsapp);
-  color: white;
-}
-.btn-whatsapp:hover { background: #20BD5A; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(37,211,102,0.3); }
-
-.btn-outline {
-  background: transparent;
-  color: var(--accent);
-  border: 1.5px solid var(--accent);
-}
-.btn-outline:hover { background: var(--accent); color: white; }
-
-/* Nav */
-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  height: var(--nav-height);
-  background: rgba(255,255,255,0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(232,221,208,0.5);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-}
-
-nav .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.nav-logo {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--fg);
-  letter-spacing: -0.01em;
-}
-
-.nav-logo span { color: var(--accent); }
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-.nav-links a {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--muted);
-  transition: color 0.2s;
-  position: relative;
-}
-
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0; right: 0;
-  height: 1.5px;
-  background: var(--accent);
-  transform: scaleX(0);
-  transition: transform 0.2s;
-}
-
-.nav-links a:hover { color: var(--fg); }
-.nav-links a:hover::after { transform: scaleX(1); }
-
-.nav-cta { padding: 10px 24px; font-size: 0.8rem; }
-
-.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
-.nav-toggle span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--fg);
-  margin: 5px 0;
-  transition: all 0.3s;
-  border-radius: 2px;
-}
-
-/* WhatsApp Float */
-.whatsapp-float {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 999;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: var(--whatsapp);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-  transition: all 0.3s;
-}
-.whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,0.45); }
-.whatsapp-float svg { width: 26px; height: 26px; fill: white; }
+/* Header */
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.06);height:72px;display:flex;align-items:center}
+.header .container{max-width:1140px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.header-logo{display:flex;align-items:center;gap:10px}
+.header-logo img{height:42px;width:auto}
+.header-logo span{font-family:'Playfair Display',serif;font-size:18px;color:#31302C;letter-spacing:0.5px}
+.header-nav{display:flex;gap:24px;align-items:center}
+.header-nav a{font-size:13px;font-weight:500;color:#5A555C;text-transform:uppercase;letter-spacing:1px;transition:color .3s;position:relative}
+.header-nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:#92A7A2;transition:width .3s}
+.header-nav a:hover{color:#31302C}
+.header-nav a:hover::after{width:100%}
+.menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px}
+.menu-toggle svg{width:28px;height:28px;stroke:#31302C;stroke-width:2;fill:none}
 
 /* Hero */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding-top: var(--nav-height);
-  background: linear-gradient(135deg, #FDF6ED 0%, #F5EDE0 50%, #EDE0D0 100%);
-  position: relative;
-  overflow: hidden;
-}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:72px;background:#F3E9DF;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;right:-20%;width:70%;height:150%;background:radial-gradient(ellipse, rgba(146,167,162,0.08), transparent 70%);pointer-events:none}
+.hero .container{max-width:1140px;margin:0 auto;padding:0 24px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hero-content{max-width:540px}
+.hero h1{font-family:'Marcellus',serif;font-size:clamp(38px,5vw,56px);font-weight:400;line-height:1.1;color:#31302C;margin-bottom:16px}
+.hero h1 strong{color:#9F7026;font-weight:400}
+.hero h2{font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,24px);font-weight:400;color:#92A7A2;font-style:italic;margin-bottom:24px}
+.hero p{font-size:16px;color:#5A555C;line-height:1.7;margin-bottom:32px;max-width:480px}
+.hero-buttons{display:flex;gap:16px;flex-wrap:wrap}
+.hero-buttons .btn-whatsapp{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;background:#92A7A2;color:white;border-radius:50px;font-weight:600;font-size:15px;text-transform:uppercase;letter-spacing:0.5px;transition:all .3s;border:none;cursor:pointer}
+.hero-buttons .btn-whatsapp:hover{background:#7A958F;transform:translateY(-2px);box-shadow:0 8px 24px rgba(146,167,162,0.3)}
+.hero-buttons .btn-instagram{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;background:transparent;color:#31302C;border-radius:50px;font-weight:500;font-size:14px;border:1.5px solid #31302C;transition:all .3s}
+.hero-buttons .btn-instagram:hover{background:#31302C;color:white}
+.hero-image{display:flex;justify-content:center;align-items:center}
+.hero-image img{max-height:600px;width:auto;border-radius:50% 50% 0 0;object-fit:cover;box-shadow:0 20px 60px rgba(0,0,0,0.08)}
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -30%;
-  right: -10%;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(200,164,92,0.06) 0%, transparent 70%);
-  pointer-events: none;
-}
+/* Sections general */
+.section{padding:80px 0}
+.section .container{max-width:1140px;margin:0 auto;padding:0 24px}
+.section-label{font-family:'Playfair Display',serif;font-style:italic;font-size:14px;color:#92A7A2;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;text-align:center}
+.section-title{font-family:'Marcellus',serif;font-size:clamp(30px,4vw,42px);font-weight:400;color:#31302C;margin-bottom:16px;text-align:center;line-height:1.2}
+.section-subtitle{font-size:16px;color:#5A555C;text-align:center;max-width:600px;margin:0 auto 48px;line-height:1.6}
 
-.hero .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
+/* Section backgrounds */
+.section-beige{background:#F3E9DF}
+.section-white{background:#FFFFFF}
+.section-mint{background:#D0E5DE}
+.section-dark{background:#0A3939}
+.section-dark .section-label{color:#92A7A2}
+.section-dark .section-title{color:#FFFFFF}
+.section-dark .section-subtitle{color:#A0C0B8}
 
-.hero-content { padding: 40px 0; }
+/* Services */
+.servicos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.servico-card{background:white;border-radius:8px;padding:28px 24px;border:1px solid #E0D5C8;transition:all .3s}
+.servico-card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,0.06)}
+.servico-card .icon{font-size:28px;margin-bottom:12px}
+.servico-card h4{font-family:'Marcellus',serif;font-size:18px;font-weight:400;color:#31302C;margin-bottom:8px}
+.servico-card p{font-size:14px;color:#5A555C;line-height:1.6}
+.servico-card .tag{display:inline-block;margin-top:12px;font-size:11px;padding:4px 12px;border-radius:50px;background:#F3E9DF;color:#5A555C;text-transform:uppercase;letter-spacing:0.5px}
 
-.hero-badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-  border: 1px solid var(--accent-light);
-  padding: 6px 16px;
-  border-radius: 50px;
-  margin-bottom: 24px;
-}
+/* Services category */
+.servico-categoria{margin-bottom:40px}
+.servico-categoria:last-child{margin-bottom:0}
+.servico-categoria h3{font-family:'Marcellus',serif;font-size:24px;color:#31302C;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid #92A7A2}
+.servico-lista{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.servico-lista li{display:flex;align-items:center;gap:10px;padding:12px 16px;background:white;border-radius:8px;border:1px solid #E0D5C8;font-size:14px;color:#31302C;transition:all .2s}
+.servico-lista li:hover{border-color:#92A7A2;background:#F8F5F0}
+.servico-lista li::before{content:'›';font-size:20px;color:#9F7026;font-weight:700;line-height:1}
 
-.hero h1 {
-  font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
-  line-height: 1.15;
-  margin-bottom: 20px;
-  color: var(--fg);
-}
-
-.hero h1 span { color: var(--accent); font-style: italic; }
-
-.hero p {
-  font-size: 1.1rem;
-  color: var(--muted);
-  line-height: 1.7;
-  margin-bottom: 36px;
-  max-width: 480px;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-image .frame {
-  width: 100%;
-  max-width: 440px;
-  aspect-ratio: 3/4;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-  background: var(--sage-light);
-}
-
-.hero-image .frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+/* Sobre */
+.sobre{background:#FFFFFF}
+.sobre .container{max-width:1140px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.sobre-image{position:relative;border-radius:12px;overflow:hidden}
+.sobre-image img{width:100%;border-radius:12px}
+.sobre-text h3{font-family:'Marcellus',serif;font-size:28px;font-weight:400;color:#31302C;margin-bottom:8px}
+.sobre-text .cargo{color:#92A7A2;font-weight:500;font-size:15px;margin-bottom:20px}
+.sobre-text p{font-size:15px;line-height:1.8;color:#5A555C;margin-bottom:16px}
+.sobre-text .btn-leia{display:inline-flex;align-items:center;gap:6px;color:#9F7026;font-weight:500;font-size:14px;transition:all .3s}
+.sobre-text .btn-leia:hover{gap:10px}
 
 /* Stats */
-.stats {
-  padding: 60px 0;
-  background: var(--dark-bg);
-  color: var(--text-light);
-}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px;padding-top:40px;border-top:1px solid #E0D5C8}
+.stat-item{text-align:center}
+.stat-item strong{font-family:'Playfair Display',serif;display:block;font-size:36px;color:#9F7026;font-weight:600}
+.stat-item span{font-size:13px;color:#5A555C}
 
-.stats .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-  text-align: center;
-}
+/* Awards */
+.premios-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.premio-card{background:white;border-radius:8px;padding:32px 24px;text-align:center;border:1px solid #E0D5C8;transition:all .3s}
+.premio-card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,0.06)}
+.premio-card .icon{font-size:36px;margin-bottom:12px;color:#9F7026}
+.premio-card h5{font-family:'Marcellus',serif;font-size:16px;font-weight:400;color:#31302C;margin-bottom:4px}
+.premio-card span{font-size:12px;color:#92A7A2;text-transform:uppercase;letter-spacing:0.5px}
 
-.stat-number {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 3vw, 2.8rem);
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 4px;
-}
+/* Galeria */
+.galeria{background:#F3E9DF}
+.galeria-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.galeria-item{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:1;cursor:pointer;transition:all .3s}
+.galeria-item:hover{transform:scale(1.03)}
+.galeria-item img{width:100%;height:100%;object-fit:cover}
+.galeria-item .label{position:absolute;bottom:0;left:0;right:0;padding:10px 14px;background:linear-gradient(transparent,rgba(0,0,0,0.6));color:white;font-size:12px;font-weight:500}
 
-.stat-label {
-  font-size: 0.85rem;
-  color: rgba(245,240,232,0.7);
-  font-weight: 400;
-}
-
-/* Services Featured */
-.services-featured {
-  background: var(--surface);
-}
-
-.services-featured .container > p { margin-bottom: 48px; }
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.service-card {
-  background: var(--bg);
-  border-radius: var(--radius);
-  padding: 32px;
-  transition: all 0.3s;
-  border: 1px solid var(--border);
-  position: relative;
-  overflow: hidden;
-}
-
-.service-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s;
-}
-
-.service-card:hover { border-color: var(--accent-light); box-shadow: 0 8px 32px rgba(200,164,92,0.1); }
-.service-card:hover::before { transform: scaleX(1); }
-
-.service-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--accent-light);
-  color: var(--accent-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-}
-
-.service-card h3 {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.service-card p {
-  font-size: 0.88rem;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-/* Services Full List */
-.services-full {
-  background: var(--bg);
-}
-
-.services-full .container > p { margin-bottom: 48px; }
-
-.service-categories {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-}
-
-.service-category {
-  background: var(--surface);
-  border-radius: var(--radius);
-  padding: 32px;
-  border: 1px solid var(--border);
-}
-
-.service-category h3 {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--accent-dark);
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-}
-
-.service-category ul li {
-  padding: 8px 0;
-  font-size: 0.92rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border-bottom: 1px solid rgba(232,221,208,0.4);
-}
-
-.service-category ul li:last-child { border-bottom: none; }
-.service-category ul li::before {
-  content: '';
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--accent);
-  flex-shrink: 0;
-}
-
-/* About */
-.about {
-  background: var(--surface);
-}
-
-.about .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
-}
-
-.about-image {
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-}
-
-.about-image img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
-
-.about-credentials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 24px;
-}
-
-.credential {
-  display: flex;
-  align-items: start;
-  gap: 10px;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
-.credential svg {
-  width: 16px;
-  height: 16px;
-  fill: var(--accent);
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-/* Testimonials */
-.testimonials {
-  background: var(--bg);
-}
-
-.testimonials .container > p { margin-bottom: 48px; }
-
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.testimonial-card {
-  background: var(--surface);
-  border-radius: var(--radius);
-  padding: 32px;
-  border: 1px solid var(--border);
-}
-
-.testimonial-stars {
-  color: var(--accent);
-  font-size: 0.9rem;
-  margin-bottom: 16px;
-  letter-spacing: 2px;
-}
-
-.testimonial-card blockquote {
-  font-size: 0.92rem;
-  line-height: 1.7;
-  color: var(--fg);
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.testimonial-author img {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.testimonial-author strong {
-  font-size: 0.88rem;
-  font-weight: 600;
-}
-
-.testimonial-author span {
-  font-size: 0.78rem;
-  color: var(--muted);
-}
+/* Depoimentos */
+.depoimentos{background:#FFFFFF}
+.depoimentos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.depoimento-card{background:#F3E9DF;border-radius:8px;padding:32px 24px;position:relative}
+.depoimento-card::before{content:'"';position:absolute;top:12px;right:20px;font-family:'Playfair Display',serif;font-size:64px;line-height:1;color:#9F7026;opacity:0.15}
+.depoimento-card .stars{color:#9F7026;font-size:14px;margin-bottom:12px}
+.depoimento-card p{font-size:14px;line-height:1.7;color:#5A555C;margin-bottom:16px;font-style:italic}
+.depoimento-card .author{display:flex;align-items:center;gap:12px}
+.depoimento-card .author .avatar{width:40px;height:40px;border-radius:50%;overflow:hidden}
+.depoimento-card .author .avatar img{width:100%;height:100%;object-fit:cover}
+.depoimento-card .author .info strong{font-size:13px;display:block;color:#31302C}
+.depoimento-card .author .info span{font-size:12px;color:#5A555C}
 
 /* FAQ */
-.faq { background: var(--surface); }
-
-.faq .container > p { margin-bottom: 48px; }
-
-.faq-list {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.faq-item {
-  border-bottom: 1px solid var(--border);
-}
-
-.faq-question {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--fg);
-  text-align: left;
-  transition: color 0.2s;
-}
-
-.faq-question:hover { color: var(--accent); }
-
-.faq-question svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--muted);
-  transition: transform 0.3s;
-  flex-shrink: 0;
-}
-
-.faq-item.open .faq-question svg { transform: rotate(180deg); fill: var(--accent); }
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-.faq-item.open .faq-answer {
-  max-height: 300px;
-  padding-bottom: 20px;
-}
-
-.faq-answer p {
-  font-size: 0.92rem;
-  color: var(--muted);
-  line-height: 1.7;
-}
+.faq{background:#D0E5DE}
+.faq-list{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid rgba(0,0,0,0.08);padding:0}
+.faq-item:last-child{border-bottom:none}
+.faq-question{width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;background:none;border:none;cursor:pointer;font-family:'Marcellus',serif;font-size:17px;color:#31302C;text-align:left;gap:16px;transition:color .3s}
+.faq-question:hover{color:#0A3939}
+.faq-question .arrow{font-size:14px;transition:transform .3s;color:#92A7A2;flex-shrink:0}
+.faq-question.active .arrow{transform:rotate(180deg)}
+.faq-answer{padding:0 0 20px;display:none;font-size:14px;color:#5A555C;line-height:1.7}
+.faq-answer.open{display:block}
 
 /* Blog */
-.blog-posts {
-  background: var(--bg);
-}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.blog-card{background:white;border-radius:8px;overflow:hidden;border:1px solid #E0D5C8;transition:all .3s}
+.blog-card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,0.06)}
+.blog-card .img-wrap{aspect-ratio:16/9;background:#E0D5C8;overflow:hidden}
+.blog-card .img-wrap img{width:100%;height:100%;object-fit:cover}
+.blog-card .body{padding:20px}
+.blog-card .body .date{font-size:11px;color:#92A7A2;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px}
+.blog-card .body h4{font-family:'Marcellus',serif;font-size:17px;font-weight:400;margin-bottom:8px;color:#31302C;line-height:1.3}
+.blog-card .body p{font-size:13px;color:#5A555C;line-height:1.6}
+.blog-card .body .read-more{display:inline-flex;align-items:center;gap:4px;margin-top:10px;font-size:13px;font-weight:500;color:#92A7A2;transition:gap .3s}
+.blog-card .body .read-more:hover{gap:8px}
 
-.blog-posts .container > p { margin-bottom: 48px; }
+/* CTA WhatsApp */
+.cta-whatsapp{background:#0A3939;text-align:center;padding:80px 0}
+.cta-whatsapp h2{font-family:'Marcellus',serif;font-size:clamp(28px,4vw,40px);color:white;font-weight:400;margin-bottom:12px}
+.cta-whatsapp p{color:#A0C0B8;font-size:16px;margin-bottom:32px}
+.cta-whatsapp .btn-whatsapp{display:inline-flex;align-items:center;gap:12px;padding:18px 40px;background:#92A7A2;color:white;border:none;border-radius:50px;font-weight:600;font-size:16px;text-transform:uppercase;letter-spacing:0.5px;cursor:pointer;transition:all .3s}
+.cta-whatsapp .btn-whatsapp:hover{background:#7A958F;transform:translateY(-2px);box-shadow:0 8px 30px rgba(146,167,162,0.3)}
 
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.blog-card {
-  background: var(--surface);
-  border-radius: var(--radius);
-  overflow: hidden;
-  border: 1px solid var(--border);
-  transition: all 0.3s;
-}
-
-.blog-card:hover { border-color: var(--accent-light); box-shadow: 0 8px 32px rgba(200,164,92,0.1); }
-
-.blog-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.blog-card-body {
-  padding: 24px;
-}
-
-.blog-card-date {
-  font-size: 0.78rem;
-  color: var(--muted);
-  margin-bottom: 8px;
-}
-
-.blog-card h3 {
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-  line-height: 1.3;
-}
-
-.blog-card p {
-  font-size: 0.85rem;
-  color: var(--muted);
-  line-height: 1.6;
-  margin-bottom: 16px;
-}
-
-.blog-card a {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--accent);
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.blog-card a:hover { color: var(--accent-dark); }
-
-/* Contact CTA */
-.contact-cta {
-  background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-surface) 100%);
-  color: var(--text-light);
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-cta::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -10%;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(200,164,92,0.04) 0%, transparent 60%);
-  pointer-events: none;
-}
-
-.contact-cta .section-title { color: var(--text-light); }
-
-.contact-cta .section-subtitle { color: rgba(245,240,232,0.7); margin: 0 auto 40px; }
-
-.contact-info {
-  display: flex;
-  justify-content: center;
-  gap: 48px;
-  flex-wrap: wrap;
-  margin-top: 48px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 0.95rem;
-}
-
-.contact-item svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--accent);
-  flex-shrink: 0;
-}
+/* Contact */
+.contato{background:#FFFFFF}
+.contato .container{max-width:1140px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.contato-info h3{font-family:'Marcellus',serif;font-size:24px;font-weight:400;color:#31302C;margin-bottom:24px}
+.contato-info .item{display:flex;gap:16px;margin-bottom:20px;align-items:flex-start}
+.contato-info .item .ico{width:44px;height:44px;border-radius:50%;background:#F3E9DF;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}
+.contato-info .item .text{font-size:14px;color:#5A555C;line-height:1.5}
+.contato-info .item .text strong{display:block;color:#31302C;font-size:14px;margin-bottom:2px}
+.contato-info .social{display:flex;gap:12px;margin-top:24px}
+.contato-info .social a{width:44px;height:44px;border-radius:50%;border:1.5px solid #E0D5C8;display:flex;align-items:center;justify-content:center;color:#5A555C;font-size:18px;transition:all .3s}
+.contato-info .social a:hover{background:#92A7A2;border-color:#92A7A2;color:white}
+.contato-address{background:#F3E9DF;padding:28px;border-radius:12px}
+.contato-address h4{font-family:'Marcellus',serif;font-size:18px;margin-bottom:12px;color:#31302C}
+.contato-address p{font-size:14px;color:#5A555C;line-height:1.7;margin-bottom:6px}
+.contato-address .phone{font-size:18px;color:#0A3939;font-weight:600;margin-top:12px}
 
 /* Footer */
-footer {
-  background: #152525;
-  color: rgba(245,240,232,0.6);
-  padding: 48px 0 32px;
+.footer{background:#0A3939;padding:60px 0 30px;color:white}
+.footer .container{max-width:1140px;margin:0 auto;padding:0 24px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,0.1)}
+.footer-brand h4{font-family:'Marcellus',serif;font-size:20px;margin-bottom:8px}
+.footer-brand p{font-size:13px;color:#A0C0B8;line-height:1.6}
+.footer-col h5{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#92A7A2;margin-bottom:16px}
+.footer-col a{display:block;font-size:13px;color:#A0C0B8;padding:4px 0;transition:color .3s}
+.footer-col a:hover{color:white}
+.footer-bottom{text-align:center;font-size:12px;color:#5A8A82}
+.footer-bottom a{color:#92A7A2}
+
+/* WhatsApp float */
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:99;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;color:white;font-size:28px;box-shadow:0 4px 20px rgba(37,211,102,0.3);transition:all .3s}
+.whatsapp-float:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,0.4)}
+
+/* Responsive */
+@media(max-width:968px){
+  .hero .container{grid-template-columns:1fr;gap:40px;text-align:center}
+  .hero-content{max-width:100%}
+  .hero p{margin:0 auto 32px}
+  .hero-buttons{justify-content:center}
+  .hero-image img{max-height:400px}
+  .sobre .container{grid-template-columns:1fr;gap:40px}
+  .contato .container{grid-template-columns:1fr;gap:40px}
+  .servicos-grid,.blog-grid,.depoimentos-grid,.premios-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .header-nav{display:none}
+  .menu-toggle{display:block}
+  .header-nav.open{display:flex;position:fixed;top:72px;left:0;right:0;background:white;flex-direction:column;padding:24px;border-bottom:1px solid #E0D5C8;gap:16px}
+  .servicos-grid,.depoimentos-grid,.premios-grid{grid-template-columns:1fr}
+  .blog-grid,.galeria-grid{grid-template-columns:1fr 1fr}
+  .servico-lista{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .section{padding:60px 0}
+  .hero{min-height:auto;padding:100px 0 60px}
 }
 
-footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-footer .nav-logo { color: var(--text-light); }
-
-.footer-social {
-  display: flex;
-  gap: 16px;
-}
-
-.footer-social a {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid rgba(245,240,232,0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s;
-}
-
-.footer-social a:hover { border-color: var(--accent); background: var(--accent); }
-.footer-social a:hover svg { fill: white; }
-
-.footer-social svg {
-  width: 18px;
-  height: 18px;
-  fill: rgba(245,240,232,0.5);
-  transition: fill 0.3s;
-}
-
-.footer-bottom {
-  margin-top: 32px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(245,240,232,0.08);
-  text-align: center;
-  font-size: 0.82rem;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .nav-links {
-    position: fixed;
-    top: var(--nav-height);
-    left: 0; right: 0;
-    background: rgba(255,255,255,0.98);
-    backdrop-filter: blur(12px);
-    flex-direction: column;
-    padding: 24px;
-    gap: 20px;
-    border-bottom: 1px solid var(--border);
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: all 0.3s;
-    pointer-events: none;
-  }
-
-  .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
-  .nav-toggle { display: block; }
-
-  section { padding: 64px 0; }
-
-  .hero .container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
-  }
-
-  .hero p { margin: 0 auto 36px; }
-  .hero-actions { justify-content: center; }
-  .hero-image .frame { max-width: 320px; }
-
-  .stats .container { grid-template-columns: repeat(2, 1fr); gap: 24px; }
-
-  .services-grid { grid-template-columns: 1fr; }
-  .service-categories { grid-template-columns: 1fr; }
-
-  .about .container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .about-image img { height: 320px; }
-  .about-credentials { grid-template-columns: 1fr; }
-
-  .testimonials-grid { grid-template-columns: 1fr; }
-  .blog-grid { grid-template-columns: 1fr; }
-
-  .contact-info { flex-direction: column; align-items: center; gap: 20px; }
-
-  footer .container { flex-direction: column; text-align: center; }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
-  .blog-grid { grid-template-columns: repeat(2, 1fr); }
-  .service-categories { grid-template-columns: 1fr 1fr; }
-}
+/* Instagram grid embed style */
+.instagram-embed{text-align:center;margin-top:32px}
+.instagram-embed .btn-instagram{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:transparent;color:#31302C;border:1.5px solid #31302C;border-radius:50px;font-weight:500;font-size:14px;transition:all .3s}
+.instagram-embed .btn-instagram:hover{background:#31302C;color:white}
 </style>
 </head>
 <body>
 
-<nav>
+<!-- Header -->
+<header class="header">
   <div class="container">
-    <a href="#" class="nav-logo">Dra. Priscyla <span>Camara</span></a>
-    <div class="nav-links" id="navLinks">
-      <a href="#hero">Home</a>
-      <a href="#servicos">Serviços</a>
+    <a href="#" class="header-logo">
+      <img src="images/logo.png" alt="Logo Dra. Priscyla Câmara" onerror="this.style.display='none'">
+      <span>Dra. Priscyla Câmara</span>
+    </a>
+    <nav class="header-nav" id="mainNav">
+      <a href="#inicio">Home</a>
+      <a href="#servicos">Procedimentos</a>
       <a href="#sobre">Sobre</a>
+      <a href="#galeria">Resultados</a>
       <a href="#faq">FAQ</a>
       <a href="#blog">Blog</a>
       <a href="#contato">Contato</a>
-      <a href="https://wa.me/5591981923715?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" class="btn btn-whatsapp nav-cta">Agende pelo WhatsApp</a>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
+    </nav>
+    <button class="menu-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </div>
-</nav>
+</header>
 
-<a href="https://wa.me/5591981923715?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
-
-<section class="hero" id="hero">
+<!-- Hero -->
+<section class="hero" id="inicio">
   <div class="container">
     <div class="hero-content">
-      <div class="hero-badge">Harmonização Orofacial & Estética</div>
-      <h1>Rinomodelação &amp; Harmonização<br>Orofacial — sua <span>nova imagem</span>.</h1>
-      <p>Especialista em rinomodelação definitiva e harmonização orofacial em Belém. Resultados naturais que realçam sua beleza facial sem cirurgia. Atendimento personalizado da avaliação ao pós-operatório.</p>
-      <div class="hero-actions">
-        <a href="https://wa.me/5591981923715?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" class="btn btn-whatsapp">
+      <h1>Rinomodelação &<br><strong>Harmonização Orofacial</strong></h1>
+      <h2>Realce sua beleza natural com segurança</h2>
+      <p>Referência em rinomodelação definitiva estruturada e harmonização orofacial em Belém. Resultados naturais que valorizam sua identidade facial.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/559181923715?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação" target="_blank" class="btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Agende sua avaliação
         </a>
-        <a href="#servicos" class="btn btn-outline">Ver procedimentos</a>
+        <a href="https://www.instagram.com/dra.priscylacamara" target="_blank" class="btn-instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          @dra.priscylacamara
+        </a>
       </div>
     </div>
     <div class="hero-image">
-      <div class="frame">
-        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=800&fit=crop" alt="Dra. Priscyla Camara — Harmonização Orofacial" loading="lazy">
-      </div>
+      <img src="images/dra.png" alt="Dra. Priscyla Câmara" onerror="this.src='images/pri foto.png'">
     </div>
   </div>
 </section>
 
-<section class="stats">
+<!-- Services -->
+<section class="section section-white" id="servicos">
   <div class="container">
-    <div>
-      <div class="stat-number">10+</div>
-      <div class="stat-label">Anos de experiência</div>
+    <p class="section-label">Nossos Procedimentos</p>
+    <h2 class="section-title">Conheça os procedimentos realizados na Clínica</h2>
+    <p class="section-subtitle">Técnicas modernas e seguras para realçar sua beleza natural com resultados surpreendentes</p>
+
+    <div class="servico-categoria">
+      <h3>Harmonização Facial</h3>
+      <ul class="servico-lista">
+        <li>Rinomodelação Definitiva Estruturada</li>
+        <li>Empinar o Nariz</li>
+        <li>Harmonia do Dorso</li>
+        <li>Diminuir Abas Nasais</li>
+        <li>Bichectomia</li>
+        <li>Bioestimulador de Colágeno Facial</li>
+        <li>Lipo Cirúrgica da Papada</li>
+        <li>Lentes de Contato Dental</li>
+        <li>Toxina para Paralisação Facial</li>
+      </ul>
     </div>
-    <div>
-      <div class="stat-number">3</div>
-      <div class="stat-label">Graduações</div>
+
+    <div class="servico-categoria">
+      <h3>Preenchimentos</h3>
+      <ul class="servico-lista">
+        <li>Preenchimento Labial</li>
+        <li>Preenchimento Bigode Chinês</li>
+        <li>Preenchimento de Queixo / Mento</li>
+        <li>Preenchimento de Mandíbula</li>
+        <li>Preenchimento Sulco de Marionetes</li>
+        <li>Preenchimento de Olheiras</li>
+      </ul>
     </div>
-    <div>
-      <div class="stat-number">30+</div>
-      <div class="stat-label">Procedimentos</div>
+
+    <div class="servico-categoria">
+      <h3>Estética Corporal</h3>
+      <ul class="servico-lista">
+        <li>Endolaser</li>
+        <li>Bioestimulador Corporal</li>
+        <li>Subcisão na Celulite</li>
+        <li>Intradermo / Intramuscular / Intravenoso</li>
+        <li>Peelings Clareadores</li>
+        <li>Depilação a Laser</li>
+        <li>Remoção de Tatuagem</li>
+        <li>Hollywood Peel Facial e Corporal</li>
+        <li>Ultrassom Microfocado e Macrofocado</li>
+        <li>Glúteo Max</li>
+      </ul>
     </div>
-    <div>
-      <div class="stat-number">500+</div>
-      <div class="stat-label">Pacientes atendidos</div>
+
+    <div class="servico-categoria">
+      <h3>Consulta Nutricional</h3>
+      <ul class="servico-lista">
+        <li>Nutrição Clínica</li>
+        <li>Personal Diet</li>
+        <li>Emagrecimento</li>
+        <li>Reeducação Alimentar</li>
+        <li>Atendimento Presencial e Online</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section class="services-featured" id="servicos">
+<!-- About -->
+<section class="section" id="sobre">
   <div class="container">
-    <div class="section-label">Procedimentos</div>
-    <h2 class="section-title">Os mais procurados</h2>
-    <p class="section-subtitle">Resultados reais que transformam a face e elevam a autoestima. Conheça os procedimentos mais solicitados da clínica.</p>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">✦</div>
-        <h3>Rinomodelação Definitiva</h3>
-        <p>Modelagem do nariz sem cirurgia. Resultado natural e definitivo com técnica estruturada.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">✦</div>
-        <h3>Lipo de Papada</h3>
-        <p>Cirurgia minimamente invasiva para eliminar a gordura localizada abaixo do queixo. Resultado imediato.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">✦</div>
-        <h3>Preenchimento Labial</h3>
-        <p>Realce dos lábios com volume natural e simetria. Técnica que valoriza seu sorriso sem exageros.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">✦</div>
-        <h3>Bichectomia</h3>
-        <p>Redução cirúrgica das bochechas para um rosto mais fino e contornado. Resultado definitivo.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">✦</div>
-        <h3>Lentes de Contato Dental</h3>
-        <p>Facetas ultrafinas em porcelana que corrigem cor, forma e alinhamento dos dentes. Sorriso dos sonhos.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">✦</div>
-        <h3>Bioestimulador de Colágeno</h3>
-        <p>Estimula a produção natural de colágeno para rejuvenescimento facial progressivo e duradouro.</p>
-      </div>
+    <div class="sobre-image">
+      <img src="images/dra 5.png" alt="Dra. Priscyla Câmara" onerror="this.src='images/pri foto.png'">
     </div>
-  </div>
-</section>
+    <div class="sobre-text">
+      <p class="section-label" style="text-align:left">Sobre a Doutora</p>
+      <h3>Dra. Priscyla Câmara</h3>
+      <p class="cargo">Especialista em Harmonização Orofacial</p>
+      <p>Cirurgiã-dentista e especialista em Harmonização Orofacial, apaixonada por transformar rostos e elevar a autoestima dos seus pacientes. Com formação pela VETA — Pós-Graduação em Curitiba-PR, acumula também graduações em Nutrição pela UFPA e Educação Física pela UEPA.</p>
+      <p>Dedica-se exclusivamente à estética facial e corporal, oferecendo tratamentos modernos e personalizados em Belém. Sua abordagem combina técnica apurada com um olhar sensível para realçar a beleza natural de cada paciente.</p>
+      <a href="#" class="btn-leia">Leia mais →</a>
 
-<section class="services-full">
-  <div class="container">
-    <div class="section-label">Catálogo Completo</div>
-    <h2 class="section-title">Conheça todos os procedimentos</h2>
-    <p class="section-subtitle">Da rinomodelação definitiva à harmonização orofacial completa — a Clínica Dra. Priscyla Camara oferece um portfólio completo de procedimentos estéticos faciais e corporais.</p>
-    <div class="service-categories">
-      <div class="service-category">
-        <h3>Harmonização Facial</h3>
-        <ul>
-          <li>Rinomodelação Definitiva Estruturada</li>
-          <li>Empinar o nariz</li>
-          <li>Harmonia do dorso</li>
-          <li>Diminuir abas</li>
-          <li>Bichectomia</li>
-          <li>Bioestimulador de Colágeno na face</li>
-          <li>Lipo Cirúrgica da Papada</li>
-          <li>Lentes de Contato Dental</li>
-          <li>Toxina Facial (Botox)</li>
-        </ul>
-      </div>
-      <div class="service-category">
-        <h3>Preenchimentos</h3>
-        <ul>
-          <li>Preenchimento Labial</li>
-          <li>Preenchimento Bigode Chinês</li>
-          <li>Preenchimento de Queixo (Mento)</li>
-          <li>Preenchimento de Mandíbula</li>
-          <li>Preenchimento Sulco de Marionetes</li>
-          <li>Preenchimento de Olheiras</li>
-          <li>Clareamento Dental</li>
-        </ul>
-      </div>
-      <div class="service-category">
-        <h3>Estética Corporal</h3>
-        <ul>
-          <li>Endolaser</li>
-          <li>Bioestimulador Corporal</li>
-          <li>Subcisão na celulite</li>
-          <li>Intradermo</li>
-          <li>Intramuscular</li>
-          <li>Intravenoso</li>
-          <li>Peelings clareadores</li>
-          <li>Depilação a laser</li>
-          <li>Remoção de tatuagem</li>
-          <li>Hollywood peel facial e corporal</li>
-          <li>Ultrassom microfocado e macrofocado</li>
-          <li>Glúteo max</li>
-        </ul>
-      </div>
-      <div class="service-category">
-        <h3>Consulta Nutricional</h3>
-        <ul>
-          <li>Nutrição Clínica</li>
-          <li>Personal Diet</li>
-          <li>Emagrecimento</li>
-          <li>Reeducação alimentar</li>
-          <li>Atendimento presencial e online</li>
-          <li>Nutrição Esportiva</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="about" id="sobre">
-  <div class="container">
-    <div class="about-image">
-      <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=700&fit=crop" alt="Dra. Priscyla Camara" loading="lazy">
-    </div>
-    <div>
-      <div class="section-label">Sobre</div>
-      <h2 class="section-title">Dra. Priscyla Camara</h2>
-      <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:24px;">
-        Cirurgiã-dentista especialista em Harmonização Orofacial, com formação sólida e apaixonada pela arte de transformar rostos. Com três graduações — Odontologia, Nutrição e Educação Física — e pós-graduações em Nutrição Clínica, Hospitalar e Esportiva, a Dra. Priscyla une conhecimento multidisciplinar para oferecer o melhor tratamento a cada paciente.
-      </p>
-      <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:24px;">
-        Formada em Odontologia pela Escola Superior da Amazônia e em Nutrição pela Universidade Federal do Pará. Realizou especialização em Harmonização Orofacial em Curitiba (PR) e cursos avançados em São Paulo, São Luís e Imperatriz. Cada procedimento é pensado com cuidado, técnica e dedicação para resultados naturais e seguros.
-      </p>
-      <div class="about-credentials">
-        <div class="credential">
-          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
-          Cirurgiã Dentista — ESA
+      <div class="stats-grid">
+        <div class="stat-item">
+          <strong>12+</strong>
+          <span>Anos de experiência</span>
         </div>
-        <div class="credential">
-          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
-          Especialista em HOF — Curitiba
+        <div class="stat-item">
+          <strong>3</strong>
+          <span>Graduações</span>
         </div>
-        <div class="credential">
-          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
-          Nutricionista — UFPA
+        <div class="stat-item">
+          <strong>500+</strong>
+          <span>Pacientes satisfeitos</span>
         </div>
-        <div class="credential">
-          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
-          Educação Física — UEPA
-        </div>
-        <div class="credential">
-          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
-          Pós em Nutrição Clínica
-        </div>
-        <div class="credential">
-          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
-          Membro de sociedades científicas
+        <div class="stat-item">
+          <strong>30+</strong>
+          <span>Procedimentos</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="testimonials">
+<!-- Awards -->
+<section class="section section-mint">
   <div class="container">
-    <div class="section-label">Depoimentos</div>
+    <p class="section-label">Reconhecimento</p>
+    <h2 class="section-title">Prêmios e Reconhecimentos</h2>
+    <p class="section-subtitle">Excelência reconhecida por instituições e veículos de comunicação</p>
+    <div class="premios-grid">
+      <div class="premio-card">
+        <div class="icon">&#9733;</div>
+        <h5>Prêmio Melhores do Brasil</h5>
+        <span>Dia Produções — 2020</span>
+      </div>
+      <div class="premio-card">
+        <div class="icon">&#9733;</div>
+        <h5>Melhores e Maiores Líderes do Pará</h5>
+        <span>2020</span>
+      </div>
+      <div class="premio-card">
+        <div class="icon">&#9733;</div>
+        <h5>100+ Coluna Robsom Lima</h5>
+        <span>2020</span>
+      </div>
+      <div class="premio-card">
+        <div class="icon">&#9733;</div>
+        <h5>Melhores do Ano</h5>
+        <span>Coluna Robsom Lima — 2019</span>
+      </div>
+      <div class="premio-card">
+        <div class="icon">&#9733;</div>
+        <h5>Prêmio Mulher</h5>
+        <span>Dia Produções — 2019</span>
+      </div>
+      <div class="premio-card">
+        <div class="icon">&#9733;</div>
+        <h5>50+</h5>
+        <span>2019/2018</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="section section-beige" id="galeria">
+  <div class="container">
+    <p class="section-label">Resultados Reais</p>
+    <h2 class="section-title">Antes e Depois</h2>
+    <p class="section-subtitle">Resultados naturais que falam por si. Pacientes reais da Clínica Dra. Priscyla Câmara.</p>
+    <div class="galeria-grid">
+      <div class="galeria-item">
+        <img src="images/PERFIL_RINOMODELAÇAO.jpg" alt="Rinomodelação" onerror="this.style.background='#E0D5C8'">
+        <div class="label">Rinomodelação</div>
+      </div>
+      <div class="galeria-item">
+        <img src="images/preenchimento-labial-botox-goias-goiania-large-1200x480.jpg" alt="Preenchimento Labial" onerror="this.style.background='#E0D5C8'">
+        <div class="label">Preenchimento Labial</div>
+      </div>
+      <div class="galeria-item">
+        <img src="images/lipo-da-papada-2.jpg" alt="Lipo de Papada" onerror="this.style.background='#E0D5C8'">
+        <div class="label">Lipo de Papada</div>
+      </div>
+      <div class="galeria-item">
+        <img src="images/tratamento-enzimatico-de-papada-e-delineamento-mandibular-23032017083254.png" alt="Delineamento Mandibular" onerror="this.style.background='#E0D5C8'">
+        <div class="label">Delineamento Mandibular</div>
+      </div>
+      <div class="galeria-item">
+        <img src="images/marcio nariz.png" alt="Rinomodelação" onerror="this.style.background='#E0D5C8'">
+        <div class="label">Rinomodelação Definitiva</div>
+      </div>
+      <div class="galeria-item">
+        <img src="images/preenchimento11.jpg" alt="Preenchimento" onerror="this.style.background='#E0D5C8'">
+        <div class="label">Preenchimento Facial</div>
+      </div>
+      <div class="galeria-item">
+        <img src="images/skinbooster_img.jpg" alt="Skinbooster" onerror="this.style.background='#E0D5C8'">
+        <div class="label">Skinbooster</div>
+      </div>
+      <div class="galeria-item">
+        <img src="images/preenchimento-olheiras90-960x750.jpg" alt="Preenchimento Olheiras" onerror="this.style.background='#E0D5C8'">
+        <div class="label">Preenchimento de Olheiras</div>
+      </div>
+    </div>
+    <div class="instagram-embed">
+      <a href="https://www.instagram.com/dra.priscylacamara" target="_blank" class="btn-instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        Veja mais casos no Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Depoimentos -->
+<section class="section section-white" id="depoimentos">
+  <div class="container">
+    <p class="section-label">Depoimentos</p>
     <h2 class="section-title">O que nossos pacientes dizem</h2>
-    <p class="section-subtitle">A satisfação dos nossos pacientes é o nosso maior reconhecimento.</p>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★★★★★</div>
-        <blockquote>"Fiz a rinomodelação com a Dra. Priscyla e o resultado superou minhas expectativas. Super natural, como eu sempre sonhei. Atendimento incrível!"</blockquote>
-        <div class="testimonial-author">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop" alt="Maria" loading="lazy">
-          <div>
-            <strong>Maria S.</strong>
-            <span>Paciente — Rinomodelação</span>
+    <p class="section-subtitle">Histórias reais de transformação e satisfação</p>
+    <div class="depoimentos-grid">
+      <div class="depoimento-card">
+        <div class="stars">★★★★★</div>
+        <p>Fiz rinomodelação com a Dra. Priscyla e o resultado superou minhas expectativas. Nariz natural, harmônico. Super recomendo!</p>
+        <div class="author">
+          <div class="avatar"><img src="images/popo e pri.png" alt="" onerror="this.style.display='none'"></div>
+          <div class="info">
+            <strong>Maria Fernanda</strong>
+            <span>Rinomodelação</span>
           </div>
         </div>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★★★★★</div>
-        <blockquote>"Excelente profissional! Fiz a lipo de papada e o pós-operatório foi super tranquilo. Resultado apareceu rápido e estou amando. Recomendo de olhos fechados."</blockquote>
-        <div class="testimonial-author">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="Carlos" loading="lazy">
-          <div>
-            <strong>Carlos A.</strong>
-            <span>Paciente — Lipo de Papada</span>
+      <div class="depoimento-card">
+        <div class="stars">★★★★★</div>
+        <p>Dra. Priscyla é extremamente profissional e cuidadosa. O preenchimento labial ficou lindo, natural. Atendimento nota 10!</p>
+        <div class="author">
+          <div class="avatar"><img src="images/popó 1.JPG.png" alt="" onerror="this.style.display='none'"></div>
+          <div class="info">
+            <strong>Lav Brenda</strong>
+            <span>Preenchimento Labial</span>
           </div>
         </div>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★★★★★</div>
-        <blockquote>"Dra. Priscyla é extremamente cuidadosa e atenciosa. O pré e pós operatório foram muito bem explicados. Me sinto mais confiante com meu novo sorriso!"</blockquote>
-        <div class="testimonial-author">
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="Ana" loading="lazy">
-          <div>
-            <strong>Ana Paula R.</strong>
-            <span>Paciente — Preenchimento Facial</span>
+      <div class="depoimento-card">
+        <div class="stars">★★★★★</div>
+        <p>Fiz lipo de papada e bichectomia. Resultado incrível, transformou meu rosto. Pós-operatório tranquilo. Super indico!</p>
+        <div class="author">
+          <div class="avatar"><img src="images/REJANE-2-660x400.png" alt="" onerror="this.style.display='none'"></div>
+          <div class="info">
+            <strong>Thiago Rosa</strong>
+            <span>Lipo de Papada + Bichectomia</span>
           </div>
         </div>
       </div>
@@ -1085,171 +501,230 @@ footer .nav-logo { color: var(--text-light); }
   </div>
 </section>
 
-<section class="faq" id="faq">
+<!-- FAQ -->
+<section class="section" id="faq">
   <div class="container">
-    <div class="section-label">FAQ</div>
-    <h2 class="section-title">Perguntas frequentes</h2>
-    <p class="section-subtitle">Tire suas principais dúvidas sobre os procedimentos.</p>
+    <p class="section-label">Perguntas Frequentes</p>
+    <h2 class="section-title">Tire suas dúvidas</h2>
+    <p class="section-subtitle">Esclarecimentos sobre os procedimentos mais comuns</p>
     <div class="faq-list">
       <div class="faq-item">
-        <button class="faq-question">
-          Quanto tempo dura o resultado da Lipo de Papada?
-          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          O que é Rinomodelação Definitiva?
+          <span class="arrow">▼</span>
         </button>
-        <div class="faq-answer"><p>O resultado da Lipo de Papada é definitivo. Como as células de gordura são removidas cirurgicamente, elas não voltam a se acumular na região. Para manter o resultado, é importante manter o peso estável e ter hábitos saudáveis.</p></div>
+        <div class="faq-answer">A Rinomodelação Definitiva Estruturada é um procedimento não cirúrgico que modela o nariz usando fios estruturadores e preenchimento. Corrige dorso, ponta nasal e abas sem cortes, com resultado definitivo e natural. O procedimento é realizado com anestesia local e o paciente volta às atividades normais rapidamente.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">
-          A Rinomodelação dói?
-          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Qual a diferença entre rinomodelação e rinoplastia?
+          <span class="arrow">▼</span>
         </button>
-        <div class="faq-answer"><p>O procedimento é realizado com anestesia local, portanto é indolor durante a aplicação. No pós-procedimento, pode haver um leve desconforto nos primeiros dias, controlado com medicamentos prescritos e compressas frias.</p></div>
+        <div class="faq-answer">A rinomodelação é um procedimento minimamente invasivo, sem cortes nem incisões, indicado para correções estéticas do nariz sem alterar a estrutura óssea. Já a rinoplastia é uma cirurgia que modifica ossos e cartilagens. A rinomodelação tem recuperação muito mais rápida e menor risco.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">
-          Preenchimento Labial fica artificial?
-          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Lipo de Papada dói? Quanto tempo dura a recuperação?
+          <span class="arrow">▼</span>
         </button>
-        <div class="faq-answer"><p>Não quando bem executado. A técnica da Dra. Priscyla prioriza a harmonia facial, respeitando a anatomia dos seus lábios. O resultado é natural e proporcional ao seu rosto, valorizando seu sorriso sem exageros.</p></div>
+        <div class="faq-answer">O procedimento é realizado com anestesia local, então o desconforto é mínimo. O paciente pode sentir um leve inchaço nos primeiros dias. O resultado definitivo aparece em torno de 30 dias e o efeito é permanente (as células de gordura removidas não voltam).</div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">
-          O que é Harmonização Orofacial (HOF)?
-          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Preenchimento Labial fica natural?
+          <span class="arrow">▼</span>
         </button>
-        <div class="faq-answer"><p>A Harmonização Orofacial é um conjunto de procedimentos estéticos minimamente invasivos que visam equilibrar e realçar a face. Inclui rinomodelação, preenchimentos, bioestimuladores, toxina facial, lipo de papada e bichectomia. Cada tratamento é personalizado para valorizar a beleza natural da paciente.</p></div>
+        <div class="faq-answer">Sim! O segredo está na técnica e na quantidade aplicada. Com a Dra. Priscyla, o preenchimento labial é feito de forma gradual e personalizada, respeitando a anatomia do seu rosto para um resultado harmonioso e natural. O efeito dura de 6 a 12 meses.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">
-          Bichectomia deixa o rosto mais fino? O resultado é definitivo?
-          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Bichectomia é cirúrgica? Qual o tempo de recuperação?
+          <span class="arrow">▼</span>
         </button>
-        <div class="faq-answer"><p>Sim, a bichectomia afina o terço inferior do rosto ao remover as bolsas de Bichat. O resultado é definitivo, pois as bolsas não se regeneram. O procedimento é simples, com recuperação rápida e resultado permanente.</p></div>
+        <div class="faq-answer">A bichectomia é um procedimento cirúrgico simples, realizado com anestesia local, para remoção das bolsas de Bichat (gordura das bochechas). A recuperação leva cerca de 7 a 10 dias com leve inchaço. O resultado é definitivo e afina o contorno facial.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">
-          Como agendar uma avaliação?
-          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Bioestimulador de Colágeno é indicado para que?
+          <span class="arrow">▼</span>
         </button>
-        <div class="faq-answer"><p>Basta clicar no botão do WhatsApp no canto inferior direito da tela ou ligar para (91) 9.8192-3715. Agendamos avaliações presenciais em nosso consultório em Belém para todos os procedimentos de harmonização orofacial.</p></div>
+        <div class="faq-answer">O bioestimulador de colágeno (como Sculptra) estimula a produção natural de colágeno da pele, tratando flacidez facial, sulcos e perda de volume. Resultado progressivo e natural, com duração de até 2 anos. Indicado para quem busca rejuvenescimento sem mudanças bruscas.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Como funciona o agendamento de consulta?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">O agendamento é feito pelo WhatsApp (91) 9.8192-3715. Na consulta, a Dra. Priscyla avalia seu caso, entende seus objetivos e indica o melhor tratamento personalizado para você. Atendemos presencialmente em Belém e também oferecemos consultas online na área nutricional.</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="blog-posts" id="blog">
+<!-- Blog -->
+<section class="section section-white" id="blog">
   <div class="container">
-    <div class="section-label">Blog</div>
-    <h2 class="section-title">Posts em destaque</h2>
-    <p class="section-subtitle">Fique por dentro das novidades, dicas e informações sobre harmonização orofacial e estética facial.</p>
+    <p class="section-label">Blog</p>
+    <h2 class="section-title">Posts em Destaque</h2>
+    <p class="section-subtitle">Fique por dentro das novidades em estética facial e corporal</p>
     <div class="blog-grid">
       <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1631055521769-f764450598ef?w=400&h=260&fit=crop" alt="Rinomodelação" loading="lazy">
-        <div class="blog-card-body">
-          <div class="blog-card-date">10 Junho 2026</div>
-          <h3>Rinomodelação Definitiva — Tudo o que Você Precisa Saber</h3>
-          <p>Descubra como funciona a rinomodelação estruturada, o procedimento não cirúrgico que modela o nariz com resultados definitivos e naturais.</p>
-          <a href="#">Ler mais →</a>
+        <div class="img-wrap">
+          <img src="images/rino-site.gif" alt="Rinomodelação" onerror="this.style.background='#E0D5C8'">
+        </div>
+        <div class="body">
+          <div class="date">12 Maio 2026</div>
+          <h4>Rinomodelação: a alternativa não cirúrgica para um nariz harmonioso</h4>
+          <p>Descubra como a rinomodelação definitiva estruturada pode transformar seu nariz sem cortes.</p>
+          <a class="read-more" href="#">Ler mais →</a>
         </div>
       </div>
       <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=260&fit=crop" alt="Bichectomia" loading="lazy">
-        <div class="blog-card-body">
-          <div class="blog-card-date">28 Abril 2026</div>
-          <h3>Bichectomia — Cirurgia de Redução das Bochechas</h3>
-          <p>Entenda como a bichectomia pode afinar seu rosto de forma definitiva. Tire todas as suas dúvidas sobre o procedimento.</p>
-          <a href="#">Ler mais →</a>
+        <div class="img-wrap">
+          <img src="images/lipo-da-papada-2.jpg" alt="Lipo de Papada" onerror="this.style.background='#E0D5C8'">
+        </div>
+        <div class="body">
+          <div class="date">28 Abril 2026</div>
+          <h4>Lipo de Papada — Livre-se dessa gordurinha indesejável</h4>
+          <p>Saiba como a lipo cirúrgica da papada pode definir seu contorno facial de forma definitiva.</p>
+          <a class="read-more" href="#">Ler mais →</a>
         </div>
       </div>
       <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1615460933826-b7be1ef14f48?w=400&h=260&fit=crop" alt="Lipo de Papada" loading="lazy">
-        <div class="blog-card-body">
-          <div class="blog-card-date">15 Abril 2026</div>
-          <h3>Lipo de Papada — Livre-se Dessa Gordurinha Indesejável</h3>
-          <p>Saiba tudo sobre a lipo de papada: como é feita, recuperação e resultados. Um dos procedimentos mais procurados da clínica.</p>
-          <a href="#">Ler mais →</a>
+        <div class="img-wrap">
+          <img src="images/preenchimento-labial-botox-goias-goiania-large-1200x480.jpg" alt="Preenchimento" onerror="this.style.background='#E0D5C8'">
+        </div>
+        <div class="body">
+          <div class="date">10 Abril 2026</div>
+          <h4>Tudo sobre preenchimento labial: mitos e verdades</h4>
+          <p>Desvende os principais mitos sobre o preenchimento labial e entenda como o procedimento é realizado.</p>
+          <a class="read-more" href="#">Ler mais →</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="contact-cta" id="contato">
-  <div class="container">
-    <div class="section-label" style="color:var(--accent-light)">Contato</div>
-    <h2 class="section-title">Vamos realçar sua beleza facial?</h2>
-    <p class="section-subtitle">Agende sua avaliação e descubra como a rinomodelação e a harmonização orofacial podem transformar sua autoestima com segurança e resultados naturais.</p>
-    <a href="https://wa.me/5591981923715?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" class="btn btn-whatsapp" style="font-size:1.05rem;padding:18px 40px;">
-      AGENDE SUA AVALIAÇÃO POR WHATSAPP
+<!-- CTA WhatsApp -->
+<section class="cta-whatsapp">
+  <div class="container" style="max-width:1140px;margin:0 auto;padding:0 24px">
+    <h2>Agende sua Avaliação</h2>
+    <p>Marque uma consulta e descubra o melhor tratamento para você</p>
+    <a href="https://wa.me/559181923715?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação" target="_blank" class="btn-whatsapp">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      AGENDE SUA CONSULTA POR WhatsApp!
     </a>
-    <div class="contact-info">
-      <div class="contact-item">
-        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        dra.priscylacamara@email.com
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contato">
+  <div class="container">
+    <div class="contato-info">
+      <p class="section-label" style="text-align:left">Contato</p>
+      <h3>Clínica Dra. Priscyla Câmara</h3>
+      <div class="item">
+        <div class="ico">📍</div>
+        <div class="text">
+          <strong>Endereço</strong>
+          Edifício URBE 14 — Entre Domingos Marreiros e Boaventura da Silva<br>
+          Belém, Pará
+        </div>
       </div>
-      <div class="contact-item">
-        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        Edifício URBE 14 — Belém, PA
+      <div class="item">
+        <div class="ico">📞</div>
+        <div class="text">
+          <strong>WhatsApp</strong>
+          (91) 9.8192-3715
+        </div>
       </div>
-      <div class="contact-item">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
-        (91) 9.8192-3715
+      <div class="item">
+        <div class="ico">📧</div>
+        <div class="text">
+          <strong>E-mail</strong>
+          contato@drapriscyla.com
+        </div>
       </div>
+      <div class="item">
+        <div class="ico">🕐</div>
+        <div class="text">
+          <strong>Horário de Atendimento</strong>
+          Seg a Sex: 8h às 18h | Sáb: 8h às 12h
+        </div>
+      </div>
+      <div class="social">
+        <a href="https://wa.me/559181923715" target="_blank" title="WhatsApp">📱</a>
+        <a href="https://www.instagram.com/dra.priscylacamara" target="_blank" title="Instagram">📷</a>
+        <a href="#" title="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="contato-address">
+      <h4>Localização</h4>
+      <p>Edifício URBE 14</p>
+      <p>Entre Domingos Marreiros e Boaventura da Silva</p>
+      <p>Belém — PA</p>
+      <p class="phone">(91) 9.8192-3715</p>
+      <a href="https://wa.me/559181923715?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:12px 24px;background:#92A7A2;color:white;border-radius:50px;font-weight:600;font-size:14px">Agende sua avaliação por WhatsApp →</a>
     </div>
   </div>
 </section>
 
-<footer>
+<!-- Footer -->
+<footer class="footer">
   <div class="container">
-    <a href="#" class="nav-logo">Dra. Priscyla <span>Camara</span></a>
-    <p style="font-size:0.85rem;">Harmonização Orofacial & Estética — Belém, PA</p>
-    <div class="footer-social">
-      <a href="https://instagram.com/dra.priscylacamara" target="_blank" aria-label="Instagram">
-        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-      <a href="https://wa.me/5591981923715" target="_blank" aria-label="WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>Dra. Priscyla Câmara</h4>
+        <p>Harmonização Orofacial · Rinomodelação Definitiva · Estética Corporal · Nutrição</p>
+      </div>
+      <div class="footer-col">
+        <h5>Procedimentos</h5>
+        <a href="#servicos">Rinomodelação</a>
+        <a href="#servicos">Preenchimentos</a>
+        <a href="#servicos">Bichectomia</a>
+        <a href="#servicos">Lipo de Papada</a>
+        <a href="#servicos">Estética Corporal</a>
+      </div>
+      <div class="footer-col">
+        <h5>Links</h5>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Resultados</a>
+        <a href="#faq">FAQ</a>
+        <a href="#blog">Blog</a>
+        <a href="#">Política de Privacidade</a>
+      </div>
+      <div class="footer-col">
+        <h5>Redes Sociais</h5>
+        <a href="https://www.instagram.com/dra.priscylacamara" target="_blank">Instagram</a>
+        <a href="https://wa.me/559181923715" target="_blank">WhatsApp</a>
+        <a href="#" target="_blank">YouTube</a>
+      </div>
     </div>
-  </div>
-  <div class="container footer-bottom">
-    <p>&copy; 2026 Dra. Priscyla Camara — Todos os direitos reservados. <a href="#" style="color:var(--accent)">Política de Privacidade</a></p>
+    <div class="footer-bottom">
+      <p>© 2026 Clínica Dra. Priscyla Câmara — Todos os direitos reservados.</p>
+      <p>Criado por <a href="#">Marcio Leonardo</a></p>
+    </div>
   </div>
 </footer>
 
+<!-- WhatsApp Float -->
+<a href="https://wa.me/559181923715?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação" target="_blank" class="whatsapp-float">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
+function toggleFaq(btn){
+  btn.classList.toggle('active');
+  var answer = btn.nextElementSibling;
+  answer.classList.toggle('open');
+}
 
-  navToggle.addEventListener('click', function() {
-    navLinks.classList.toggle('open');
+document.querySelectorAll('.faq-question').forEach(function(q){
+  q.addEventListener('click', function(){
+    this.classList.toggle('active');
+    this.nextElementSibling.classList.toggle('open');
   });
-
-  navLinks.querySelectorAll('a').forEach(function(link) {
-    link.addEventListener('click', function() {
-      navLinks.classList.remove('open');
-    });
-  });
-
-  document.querySelectorAll('.faq-question').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var item = this.parentElement;
-      item.classList.toggle('open');
-    });
-  });
-
-  var hero = document.querySelector('.hero');
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (!entry.isIntersecting) {
-        hero.style.opacity = '1';
-      }
-    });
-  }, { threshold: 0 });
-  observer.observe(hero);
 });
 </script>
-
 </body>
 </html>
